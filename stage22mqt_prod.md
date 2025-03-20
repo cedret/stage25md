@@ -16,7 +16,7 @@ https://endoflife.date/tomcat
 ## Création maquettes
 
 ┌──(stage㉿kali01)-[~]
-└─$ nmap -sP 120.121.2.0/24
+└─$ nmap -sP 111.111.2.0/24
 pour vérifier occupation/ disponibilité des IP
 
 Des adresses restent disponibles entre 215 et 219 pour monter la maquette en bridge, si besoin.
