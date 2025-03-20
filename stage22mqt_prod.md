@@ -16,6 +16,7 @@ https://endoflife.date/tomcat
 ## Création maquettes
 
 ┌──(stage㉿kali01)-[~]
+
 └─$ nmap -sP 111.111.2.0/24
 pour vérifier occupation/ disponibilité des IP
 
