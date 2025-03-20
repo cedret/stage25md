@@ -217,10 +217,10 @@ https://www.golinuxcloud.com/etc-network-interfaces-missing-ubuntu/
 https://linuxize.com/post/how-to-configure-static-ip-address-on-ubuntu-20-04/
 
 
-stage@srv20test:~$ ip link
+``stage@srv20test:~$ ip link``
 
-stage@srv20test:~$ sudo nano /etc/netplan/01-netcfg.yaml
-stage@srv20test:~$ cat /etc/netplan/01-netcfg.yaml
+``stage@srv20test:~$ sudo nano /etc/netplan/01-netcfg.yaml``
+``stage@srv20test:~$ cat /etc/netplan/01-netcfg.yaml``
 ````
 network:
   version: 2
