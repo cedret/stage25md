@@ -65,16 +65,24 @@ echo -e "${orange}sudo apt update"
 read reponse
 if [ $reponse -eq 11 ]
 then
-    echo -e "${vert}Installer JVM: sudo apt-get install openjdk-8-jre"
-    echo -e "${vert}Installer PostgreSQL: sudo apt install postgresql-12"
+    echo -e "${vert}Installer JVM, PostgreSQL, Apache Tomcat, Police MS"
+    echo -e "${vert}sudo apt-get install openjdk-8-jre"
+    echo -e "${vert}sudo apt install postgresql-12"
+    echo -e "${vert}cd /tmp"
+    echo -e "${vert}wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.50/bin/apache-tomcat-8.5.50.tar.gz"
+    echo -e "${vert}sudo mkdir /opt/tomcat8"
+    echo -e "${vert}sudo tar xvfz apache-tomcat-8.5.50.tar.gz -C /opt/tomcat8/ --strip-components=1"
+    echo -e "${vert}sudo groupadd tomcat8"
+    echo -e "${vert}sudo useradd -s /bin/false -g tomcat8 -d /opt/tomcat8 tomcat8"
     echo -e "${vert}Installer Font"
-    echo -e "${vert}Installer Apache"
+
 else
     if  [ $reponse -eq 12 ]
     then
-        echo -e "${vert}Installer Nginx: sudo apt install nginx-full"
-        echo -e "${vert}Installer Php: sudo apt install php-fpm"
-	    echo -e "${vert}Installer Certbot: sudo apt install certbot python3-certbot-nginx -y"
+        echo -e "${vert}Installer Nginx, Php, Certbot"
+        echo -e "${vert}sudo apt install nginx-full"
+        echo -e "${vert}sudo apt install php-fpm"
+	    echo -e "${vert}sudo apt install certbot python3-certbot-nginx -y"
     fi
 fi
 echo -e "${blanc}Fin de script"
