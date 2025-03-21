@@ -17,6 +17,17 @@ https://www.markdownguide.org/cheat-sheet/
 https://github.com/im-luka/markdown-cheatsheet
 https://www.markdown-cheatsheet.com/
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+Publish markdown
+https://dev.to/ar2pi/publish-your-markdown-docs-on-github-pages-6pe
+https://towshif.github.io/site/04.Organizing-Reporting/markdown_publishing/
+https://github.com/compiiile/compiiile
+
+https://techantidote.com/install-macos-ventura-on-proxmox-8-x/
+
+https://www.vogue.fr/article/meilleurs-films-de-tous-les-temps-liste-classement
+
+
 - Test nextcloud ubuntu server 20 ????
 > acces stockage publique ????
 > A explorer

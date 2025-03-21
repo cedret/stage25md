@@ -16,7 +16,6 @@ https://endoflife.date/tomcat
 ## Création maquettes
 
 ┌──(stage㉿kali01)-[~]
-
 └─$ nmap -sP 111.111.2.0/24
 pour vérifier occupation/ disponibilité des IP
 
@@ -72,6 +71,9 @@ https://www.postgresql.org/download/linux/ubuntu/
 *sudo apt‐get install postgresql‐9.5*
 *apt install postgresql*
 Aujourd'hui v12 minimum
+https://computingforgeeks.com/install-postgresql-12-on-ubuntu/
+*sudo apt install postgresql-12*11
+
 
 ### Polices microsoft - VOIR PLUS TARD ? -
 *sudo apt‐get ‐y install ttf‐mscorefonts‐installer*
@@ -90,10 +92,10 @@ cd /tmp
 wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.50/bin/apache-tomcat-8.5.50.tar.gz
 sudo mkdir /opt/tomcat8
 sudo tar xvfz apache-tomcat-8.5.50.tar.gz -C /opt/tomcat8/ --strip-components=1
+sudo groupadd tomcat8
+sudo useradd -s /bin/false -g tomcat8 -d /opt/tomcat8 tomcat8
 ````
 Attention aux tirets longs (U+2010 ou U+2011) au lieu des tirets courts (-, U+002D)!!!!
-sudo useradd -s /bin/false -g tomcat8 -d /opt/tomcat8 tomcat8
-
 Vérifications: Utilisateur, groupe, puis répertoire.
 ````
 stage@u16prod:/tmp$ cat /etc/passwd | grep tomcat8
@@ -207,15 +209,13 @@ php -v
 
 ## Paramétrage des composants du serveur
 
-
 ## Passage sur Ubuntu 20:
 
-### Modification de l'outl réseau.
+### Modification de l'outil réseau: Netplan
 
-#### Utilisation de netplan
 https://www.golinuxcloud.com/etc-network-interfaces-missing-ubuntu/
 https://linuxize.com/post/how-to-configure-static-ip-address-on-ubuntu-20-04/
-
+https://www.cyberciti.biz/faq/ubuntu-20-04-lts-change-hostname-permanently/
 
 ``stage@srv20test:~$ ip link``
 
@@ -235,8 +235,26 @@ network:
           addresses: [192.168.80.2]
 ````
 
+``stage@tst20prod:~$ sudo nano /etc/hosts``
 
-stage@srv20test:~$ sudo netplan apply
+````
+stage@tst20prod:~$ cat /etc/hostname
+tst20prod
+stage@tst20prod:~$ hostnamectl
+   Static hostname: tst20prod
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: 85faa907a4a14a7ba13258231d0092fe
+           Boot ID: a70fff6d8a4e4940b7e176dc20a610aa
+    Virtualization: vmware
+  Operating System: Ubuntu 20.04.6 LTS
+            Kernel: Linux 5.4.0-208-generic
+      Architecture: x86-64
+stage@tst20prod:~$ sudo hostnamectl set-hostname tst20rvpx
+````
+
+
+``stage@srv20test:~$ sudo netplan apply``
 **CHANGEMENT D'IP**
 ````
 stage@srv20test:~$ ip addr show dev ens33

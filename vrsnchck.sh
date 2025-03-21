@@ -65,8 +65,8 @@ echo -e "${orange}sudo apt update"
 read reponse
 if [ $reponse -eq 11 ]
 then
-    echo -e "${vert}Installer JVM"
-    echo -e "${vert}Installer PostgreSQL"
+    echo -e "${vert}Installer JVM: sudo apt-get install openjdk-8-jre"
+    echo -e "${vert}Installer PostgreSQL: sudo apt install postgresql-12"
     echo -e "${vert}Installer Font"
     echo -e "${vert}Installer Apache"
 else

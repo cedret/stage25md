@@ -18,14 +18,20 @@ http://cedrik.chez-alice.fr/portail/index.htm
 Refaire TP ItConnect sur vm locale?
 - Exercice sur vm locale: reverse proxy
 
-Jour3: refaire un reverse proxy avec ubuntu 16.04 pour tenter d'installer nginx et php-pfm proprement????
+Jour 3: refaire un reverse proxy avec ubuntu 16.04 pour tenter d'installer nginx et php-pfm proprement????
 jour 4: apache 2 sur prod + host only sur réseau + let's encrypt + nomdedomaine ??
 https://www.youtube.com/watch?v=dokcsaT9Q9k
+
+ TOMCAT AUTHENTICATION COMPLETE à continuer
+ 
+jour 5:
+
 
 ### Semaine 3: Ajouter le chiffrement
 - Backup préalable des certificats
 - renforcer les sécurités?
 - Boîte mail IMG?
+- promiscious vm workstation (espionnage flux réseau)
 
 ### Semaine 4: Tests de stabilité et réponse aux objectifs
 - Commandes de chiffrement existantes sur les serveurs actuels
@@ -46,12 +52,12 @@ Mise en place d'une maquette avec vmware pour refaire le système actuel:
 - 1 serveur prod (Ubuntu 16.04 LTS de 2017)
 - 1 serveur reverse proxy nginx avec chiffrement vers l'extérieur
 
-STGSIPROD      192.168.80.39    121.121.2.39
-STGSIBKP       192.168.80.100   121.121.2.100
-STGSIPREPROD   192.168.80.101   121.121.2.101
-STGSIRVPX      192.168.80.102   121.121.2.102
-GATEWAY        192.168.80.2     121.121.2.2
-dns-nameservers 192.168.80.2    121.121.2.2
+STGSIPROD      222.168.80.139   111.121.2.139
+STGSIBKP       222.168.80.100   111.121.2.100
+STGSIPREPROD   222.168.80.101   111.121.2.101
+STGSIRVPX      222.168.80.102   111.121.2.102
+GATEWAY        222.168.80.2     111.121.2.2
+dns-nameservers 222.168.80.2    111.121.2.2
 dns-search     FV.locale        FV.local
 
 #### Le serveur de prod: Rôle et composants .39
