@@ -51,6 +51,7 @@ jour 5:
 Mise en place d'une maquette avec vmware pour refaire le système actuel:
 - 1 serveur prod (Ubuntu 16.04 LTS de 2017)
 - 1 serveur reverse proxy nginx avec chiffrement vers l'extérieur
+
 | Serveur | IP def | IP temp |
 |------|-----|-----|
 | STGSIPROD   |   222.168.80.139  | 111.121.2.139 |
