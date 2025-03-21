@@ -51,20 +51,15 @@ jour 5:
 Mise en place d'une maquette avec vmware pour refaire le système actuel:
 - 1 serveur prod (Ubuntu 16.04 LTS de 2017)
 - 1 serveur reverse proxy nginx avec chiffrement vers l'extérieur
-
-STGSIPROD      222.168.80.139   111.121.2.139
-
-STGSIBKP       222.168.80.100   111.121.2.100
-
-STGSIPREPROD   222.168.80.101   111.121.2.101
-
-STGSIRVPX      222.168.80.102   111.121.2.102
-
-GATEWAY        222.168.80.2     111.121.2.2
-
-dns-nameservers 222.168.80.2    111.121.2.2
-
-dns-search     FV.locale        FV.local
+| Serveur | IP def | IP temp |
+|------|-----|-----|
+| STGSIPROD   |   222.168.80.139  | 111.121.2.139 |
+| STGSIBKP    |   222.168.80.100  | 111.121.2.100 |
+| STGSIPREPROD |  222.168.80.101  | 111.121.2.101 |
+| STGSIRVPX |     222.168.80.102  | 111.121.2.102 |
+| GATEWAY |       222.168.80.2    | 111.121.2.2 |
+| dns-nameservers | 222.168.80.2  |  111.121.2.2 |
+| dns-search |    FV.local       | FV.local |
 
 #### Le serveur de prod: Rôle et composants .39
 Dell (R530)
