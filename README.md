@@ -1,3 +1,41 @@
+# Notes techniques pour stage FV 2025
+
+## Github
+https://www.youtube.com/@edutechional/playlists
+
+### project
+https://m.youtube.com/watch?v=YVFa5VljCDY
+
+### Actions
+https://www.youtube.com/watch?v=mFFXuXjVgkU
+
+## Cloud/ nas
+https://rclone.org/
+https://www.youtube.com/watch?v=YvhYruBlDPU
+https://www.youtube.com/watch?v=cPvqMNiq8qI
+
+## Linux
+### Commandes
+https://www.youtube.com/watch?v=3nQI60toL7Q&list=PLjAHiXDnp3JnBxylj-d4CgUHJSL9Q8kOb
+
+### IPsec
+https://www.youtube.com/watch?v=V9bTy0gbXIQ&list=PLOapGKeH_KhFBC39ltMDhkEx1aI3hlwSK
+
+https://theko2fi.medium.com/comment-mettre-en-place-un-tunnel-vpn-ipsec-site-%C3%A0-site-sur-linux-en-utilisant-strongswan-1cafddd24053
+
+https://www.thibautprobst.fr/fr/posts/ipsec/
+
+https://le-guide-du-secops.fr/2021/09/02/installation-et-configuration-dun-vpn-ikev2-debian-ubuntu-demo-avec-un-appareil-ios/
+
+https://vincent.bernat.ch/fr/blog/2017-vpn-ipsec-route
+
+https://wiki.csnu.org/index.php/IPsec_sous_debian_avec_strongswan
+
+https://docs.logrhythm.com/lrsiem/docs/configure-ipsec-on-linux-machine
+
+https://linuxfr.org/forums/linux-debian-ubuntu/posts/configuration-ipsec
+
+
 ## Menu while/do avec bash
 
 ````
