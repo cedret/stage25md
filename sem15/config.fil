@@ -1,0 +1,105 @@
+config.fil
+
+# Configurations requises pour différents outils
+
+
+# ========== /sites-available/default (RVPX [...102])
+    echo -e "${blanc}        server_name rp.test.fv;"
+    echo -e "${blanc}#       location / {"
+    echo -e "${blanc}#                # First attempt to serve request as file, then"
+    echo -e "${blanc}#                # as directory, then fall back to displaying a 404."
+    echo -e "${blanc}#               try_files \$uri \$uri/ =404;"
+    echo -e "${blanc}#       }"
+    echo -e "${blanc}        location / {"
+    echo -e "${blanc}                proxy_pass http://192.168.80.139:80;"
+    echo -e "${blanc}                proxy_set_header Host \$host;"
+    echo -e "${blanc}                proxy_set_header X-Real-IP \$remote_addr;"
+    echo -e "${blanc}                proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;"
+    echo -e "${blanc}                proxy_set_header X-Forwarded-Proto \$scheme;"
+    echo -e "${blanc}        }"
+
+# ========== Création VirtualHost (SS-SSL PROD)
+    echo -e "${blanc}<VirtualHost *:443>"
+    echo -e "${blanc}    ServerAdmin webmaster@localhost"
+    echo -e "${blanc}    ServerName 192.168.80.139  # ou prod.local"
+    echo -e "${blanc}"
+    echo -e "${blanc}    DocumentRoot /var/www/html"
+    echo -e "${blanc}"
+    echo -e "${blanc}    SSLEngine on"
+    echo -e "${blanc}    SSLCertificateFile    /etc/ssl/prod/prod.crt"
+    echo -e "${blanc}    SSLCertificateKeyFile /etc/ssl/prod/prod.key"
+    echo -e "${blanc}"
+    echo -e "${blanc}    <Directory /var/www/html>"
+    echo -e "${blanc}        Options Indexes FollowSymLinks"
+    echo -e "${blanc}        AllowOverride All"
+    echo -e "${blanc}        Require all granted"
+    echo -e "${blanc}    </Directory>"
+    echo -e "${blanc}"
+    echo -e "${blanc}    ErrorLog \${APACHE_LOG_DIR}/error.log"
+    echo -e "${blanc}    CustomLog \${APACHE_LOG_DIR}/access.log combined"
+    echo -e "${blanc}</VirtualHost>"
+
+# ========== SS-SSL RVPX (Avant serveur prod)
+    echo -e "${blanc}server {"
+    echo -e "${blanc}    listen 80;"
+    echo -e "${blanc}    server_rp.test.fv;"
+    echo -e "${blanc}    # Redirection HTTP -> HTTPS"
+    echo -e "${blanc}    return 301 https://$host$request_uri;"
+    echo -e "${blanc}}"
+    echo -e "${blanc}server {"
+    echo -e "${blanc}    listen 443 ssl;"
+    echo -e "${blanc}    server_rp.test.fv;"
+    echo -e "${blanc}    ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;"
+    echo -e "${blanc}    ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;"
+    echo -e "${blanc}# Activer selon Diffie-Hellman précédent ou pas?"
+    echo -e "${blanc}#    ssl_dhparam /etc/ssl/certs/dhparam.pem;"
+    echo -e "${blanc}    ssl_protocols TLSv1.2 TLSv1.3;"
+    echo -e "${blanc}    ssl_ciphers HIGH:!aNULL:!MD5;"
+    echo -e "${blanc}    ssl_prefer_server_ciphers on;"
+    echo -e "${blanc}    # Reverse proxy vers Apache"
+    echo -e "${blanc}    location / {"
+    echo -e "${blanc}        proxy_pass http://192.168.80.139:80;"
+    echo -e "${blanc}        proxy_set_header Host $host;"
+    echo -e "${blanc}        proxy_set_header X-Real-IP $remote_addr;"
+    echo -e "${blanc}        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;"
+    echo -e "${blanc}        proxy_set_header X-Forwarded-Proto $scheme;"
+    echo -e "${blanc}    }"
+    echo -e "${blanc}}"
+
+
+
+# ========== Dans réseau local ==========
+# ========== IPsec: RVPX
+# ========== sudo nano /etc/ipsec.conf
+config setup
+  charondebug="ike 2, knl 2, cfg 2"
+
+conn nginx-to-apache
+  left=192.168.80.102
+  leftid=@nginx
+  leftsubnet=192.168.80.102/32
+  right=192.168.80.139
+  rightid=@apache
+  rightsubnet=192.168.80.139/32
+  auto=start
+  authby=secret
+  ike=aes256-sha256-modp1024
+  esp=aes256-sha256
+
+# ========== IPsec: PROD
+# ==========  sudo nano /etc/ipsec.conf
+
+config setup
+  charondebug="ike 2, knl 2, cfg 2"
+
+conn nginx-to-apache
+  left=192.168.80.139
+  leftid=@apache
+  leftsubnet=192.168.80.139/32
+  right=192.168.80.102
+  rightid=@nginx
+  rightsubnet=192.168.80.102/32
+  auto=start
+  authby=secret
+  ike=aes256-sha256-modp1024
+  esp=aes256-sha256
