@@ -10,6 +10,7 @@
 
 04/04/25: Présentation solution avec ipsec (et wireshark)
  -----> AJOUTER ssl entre client et rp?
+
 08/04/25: màj de la gateway avec netplan !!!!
 
 11/08
