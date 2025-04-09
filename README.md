@@ -1,12 +1,18 @@
 # Notes techniques pour stage FV 2025
 
-Historique des étapes
+**Historique des étapes**
+
 07/03/25: Exploration, hyperviseur
+
 14/03/25: Exploration, recherche configuration réseau
-21/03/25: Exploration, Mise en place maquette Ubuntu 20
+
+21/03/25: Exploration, Mise en place maquette Ubuntu 20, début script
+
 28/03/25: Présentation solution avec SSL (et wireshark)
+
 04/04/25: Présentation solution avec ipsec (et wireshark)
  -----> AJOUTER ssl entre client et rp?
+
 08/04/25: màj de la gateway avec netplan !!!!
 
 ## Github
