@@ -22,6 +22,9 @@
 
 09/05
 
+TESTS:
+- ICMP?
+
 ## Github
 https://www.youtube.com/@edutechional/playlists
 
