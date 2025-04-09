@@ -2,9 +2,7 @@
 
 **Historique des étapes**
 
-07/03/25: Exploration, hyperviseur
-
-14/03/25: Exploration, recherche configuration réseau
+14/03/25: Exploration, hyperviseur, recherche configuration réseau
 
 21/03/25: Exploration, Mise en place maquette Ubuntu 20, début script
 
@@ -12,8 +10,17 @@
 
 04/04/25: Présentation solution avec ipsec (et wireshark)
  -----> AJOUTER ssl entre client et rp?
-
 08/04/25: màj de la gateway avec netplan !!!!
+
+11/08
+
+18/04
+
+25/04
+
+02/05
+
+09/05
 
 ## Github
 https://www.youtube.com/@edutechional/playlists
