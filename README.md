@@ -25,7 +25,7 @@
 
 TESTS:
 - ICMP?
-
+- FTP?
 ## Github
 https://www.youtube.com/@edutechional/playlists
 
