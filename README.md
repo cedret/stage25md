@@ -47,6 +47,9 @@ Niveaux de progression:
 - Solution plus proche du système existant
 - Etapes vers la mise en production
 
+Questions autour du service de production
+- Impication de la bdd.
+- restriction des adresses IP autorisées.
 
 ## Github
 https://www.youtube.com/@edutechional/playlists
