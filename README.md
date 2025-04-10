@@ -24,10 +24,20 @@
 
 09/05
 
-TESTS:
+Tests ou renforcements:
 - ICMP?
 - FTP?
 - Diffie Helmann
+
+Niveaux de progression:
+- Reproduction de la config au plus proche?
+- Disponibilité ou compatibilité des versions?
+- Solution simplifiée et stabilisée
+- Exploration des axes de sécurité: SSL/ Ipsec +++ Options
+- Solution plus proche du système existant
+- Etapes vers la mise en production
+
+
 ## Github
 https://www.youtube.com/@edutechional/playlists
 
