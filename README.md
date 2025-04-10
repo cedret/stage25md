@@ -2,32 +2,22 @@
 
 **Historique des étapes**
 
-14/03/25: Exploration, hyperviseur, recherche configuration réseau
-- contournement domaine
-
-21/03/25: Exploration, Mise en place maquette Ubuntu 20, début script
-
-28/03/25: Présentation solution avec SSL (et wireshark) ubuntu20
-
-04/04/25: Présentation solution avec ipsec (et wireshark) ubuntu20
-- AJOUTER ssl entre client et rp?
-
-Ubuntu24
-08/04/25: màj de la gateway avec netplan !!!!
-
-amélioré le script
-testé avec ubuntu 24: rvpx, liens ssl
-bloqué liens ipsec
-
-11/08 Finaliser script avec ubuntu 20 et 24.
-
-18/04 Progression et rédaction
-
-25/04 Résultat test de mise en production ?
-
-02/05 Fin des progressions
-
-09/05
+- 14/03/25: Exploration, hyperviseur, recherche configuration réseau
+> Contournement domaine
+- 21/03/25: Exploration, Mise en place maquette Ubuntu 20, début script
+- 28/03/25: Présentation solution avec SSL (et wireshark) ubuntu20
+- 04/04/25: Présentation solution avec ipsec (et wireshark) ubuntu20
+> AJOUTER ssl entre client et rp?
+Passage sur Ubuntu24
+- 08/04/25: màj de la gateway avec netplan !!!!
+> Améliorer le script
+> testé avec ubuntu 24: rvpx, liens ssl
+> bloqué liens ipsec
+- 11/08 Finaliser script avec ubuntu 20 et 24.
+- 18/04 Progression et rédaction
+- 25/04 Résultat test de mise en production ?
+- 02/05 Fin des progressions
+- 09/05 Soutenance
 
 Tests ou renforcements:
 - ICMP?
