@@ -41,6 +41,8 @@ Tests ou renforcements:
 
 Schémas
 - Flux de données dans le SI, et autour de la BDD.
+- Ensemble du système (placer le pare-feu)
+- Piles réseau? Interconnexions et dialogues selon protocoles
 
 Comparatif SSL/IPSEC
 - service de copie quotidienne de données avec ssh pour la liste des volontaires
