@@ -28,6 +28,7 @@ Tests ou renforcements:
 - ICMP?
 - FTP?
 - Diffie Helmann
+- Firewall
 - Ajout pr.test.fv, rp.test.fv dans hosts linux
 
 Niveaux de progression:
