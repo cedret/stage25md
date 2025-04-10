@@ -39,6 +39,9 @@ Tests ou renforcements:
 - décomposition IPsec: C, I , A?
 - AH et ESP ???
 
+Schémas
+- Flux de données dans le SI, et autour de la BDD.
+
 Niveaux de progression:
 - Reproduction de la config au plus proche?
 - Disponibilité ou compatibilité des versions?
