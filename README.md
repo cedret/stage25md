@@ -36,6 +36,8 @@ Tests ou renforcements:
 - Firewall
 - logs
 - Ajout pr.test.fv, rp.test.fv dans hosts linux
+- décomposition IPsec: C, I , A?
+- AH et ESP ???
 
 Niveaux de progression:
 - Reproduction de la config au plus proche?
