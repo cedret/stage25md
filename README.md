@@ -7,12 +7,17 @@
 
 21/03/25: Exploration, Mise en place maquette Ubuntu 20, début script
 
-28/03/25: Présentation solution avec SSL (et wireshark)
+28/03/25: Présentation solution avec SSL (et wireshark) ubuntu20
 
-04/04/25: Présentation solution avec ipsec (et wireshark)
+04/04/25: Présentation solution avec ipsec (et wireshark) ubuntu20
 - AJOUTER ssl entre client et rp?
 
+Ubuntu24
 08/04/25: màj de la gateway avec netplan !!!!
+
+amélioré le script
+testé avec ubuntu 24: rvpx, liens ssl
+bloqué liens ipsec
 
 11/08
 
