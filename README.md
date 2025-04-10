@@ -3,13 +3,14 @@
 **Historique des étapes**
 
 14/03/25: Exploration, hyperviseur, recherche configuration réseau
+- contournement domaine
 
 21/03/25: Exploration, Mise en place maquette Ubuntu 20, début script
 
 28/03/25: Présentation solution avec SSL (et wireshark)
 
 04/04/25: Présentation solution avec ipsec (et wireshark)
- -----> AJOUTER ssl entre client et rp?
+- AJOUTER ssl entre client et rp?
 
 08/04/25: màj de la gateway avec netplan !!!!
 
