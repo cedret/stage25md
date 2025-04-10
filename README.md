@@ -19,13 +19,13 @@ amélioré le script
 testé avec ubuntu 24: rvpx, liens ssl
 bloqué liens ipsec
 
-11/08
+11/08 Finaliser script avec ubuntu 20 et 24.
 
-18/04
+18/04 Progression et rédaction
 
-25/04
+25/04 Résultat test de mise en production ?
 
-02/05
+02/05 Fin des progressions
 
 09/05
 
