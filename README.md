@@ -51,7 +51,7 @@ Comparatif SSL/IPSEC
 Niveaux de progression:
 - Reproduction de la config au plus proche?
 - Disponibilité ou compatibilité des versions?
-- Solution simplifiée et stabilisée
+- Solution simplifiée et stabilisée (reproductible)
 - Exploration des axes de sécurité: SSL/ Ipsec +++ Options
 - Solution plus proche du système existant
 - Etapes vers la mise en production
