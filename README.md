@@ -29,6 +29,7 @@ Tests ou renforcements:
 - FTP?
 - Diffie Helmann
 - Firewall
+- logs
 - Ajout pr.test.fv, rp.test.fv dans hosts linux
 
 Niveaux de progression:
