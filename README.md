@@ -42,6 +42,10 @@ Tests ou renforcements:
 Schémas
 - Flux de données dans le SI, et autour de la BDD.
 
+Comparatif SSL/IPSEC
+- service de copie quotidienne de données avec ssh pour la liste des volontaires
+- Avantage et inconvénients respectifs ou dans le SI actuel?
+
 Niveaux de progression:
 - Reproduction de la config au plus proche?
 - Disponibilité ou compatibilité des versions?
