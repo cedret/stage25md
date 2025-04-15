@@ -19,7 +19,7 @@ Passage sur Ubuntu24
 - 02/05 Fin des progressions
 - 09/05 Soutenance
 
-Tests ou renforcements:
+Tests ou renforcements: +TROUBLESHOUTING?
 - TCP Dump
 - ICMP?
 - FTP?
