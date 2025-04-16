@@ -19,6 +19,8 @@ Passage sur Ubuntu24
 - 02/05 Fin des progressions
 - 09/05 Soutenance
 
+https://www.hostinger.com/fr/tutoriels/reverse-proxy-nginx
+
 Tests ou renforcements: +TROUBLESHOUTING?
 - TCP Dump
 - ICMP?
