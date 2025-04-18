@@ -53,6 +53,9 @@ Questions autour du service de production
 - Impication de la bdd.
 - restriction des adresses IP autorisées.
 
+## Explorer en priorité
+- https://www.instagram.com/dan_nanni/p/C-Fa8PjOX0D/?locale=es_ES
+
 ## Github
 - https://www.youtube.com/@edutechional/playlists
 
