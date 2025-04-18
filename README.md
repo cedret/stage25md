@@ -19,8 +19,6 @@ Passage sur Ubuntu24
 - 02/05 Fin des progressions
 - 09/05 Soutenance
 
-https://www.hostinger.com/fr/tutoriels/reverse-proxy-nginx
-
 Tests ou renforcements: +TROUBLESHOUTING?
 - TCP Dump
 - ICMP?
@@ -55,6 +53,11 @@ Questions autour du service de production
 
 ## Explorer en priorité
 - https://www.instagram.com/dan_nanni/p/C-Fa8PjOX0D/?locale=es_ES
+- https://medium.com/@alexandre_43174/exploring-the-best-diagram-as-code-tools-for-software-architecture-66a63b850075
+- https://icepanel.medium.com/top-7-diagrams-as-code-tools-for-software-architecture-1a9dd0df1815
+- https://blog.stephane-robert.info/post/devops-diagram-as-code/
+- https://seifrajhi.github.io/blog/python-diagrams-as-code-architecture/
+- https://dev.to/r0mymendez/diagram-as-code-creating-dynamic-and-interactive-documentation-for-visual-content-2p93
 
 ## Github
 - https://www.youtube.com/@edutechional/playlists
@@ -85,6 +88,7 @@ Questions autour du service de production
 - https://docs.logrhythm.com/lrsiem/docs/configure-ipsec-on-linux-machine
 - https://linuxfr.org/forums/linux-debian-ubuntu/posts/configuration-ipsec
 
+- https://www.hostinger.com/fr/tutoriels/reverse-proxy-nginx
 
 ## Menu while/do avec bash
 
